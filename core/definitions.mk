@@ -1238,12 +1238,12 @@ endef
 ifneq (,$(filter 1 true,$(WITH_TIDY_ONLY)))
 define transform-cpp-to-o
 $(if $(PRIVATE_TIDY_CHECKS),
-  @echo "$($(PRIVATE_PREFIX)DISPLAY) tidy $(PRIVATE_ARM_MODE) C++: $<"
+  @echo "$($(PRIVATE_PREFIX)DISPLAY) tidy $(PRIVATE_COMPILER_ID) $(PRIVATE_ARM_MODE) C++: $<"
   $(clang-tidy-cpp))
 endef
 else
 define transform-cpp-to-o
-@echo "$($(PRIVATE_PREFIX)DISPLAY) $(PRIVATE_ARM_MODE) C++: $(PRIVATE_MODULE) <= $<"
+@echo "$($(PRIVATE_PREFIX)DISPLAY) $(PRIVATE_COMPILER_ID) $(PRIVATE_ARM_MODE) C++: $(PRIVATE_MODULE) <= $<"
 @mkdir -p $(dir $@)
 $(if $(PRIVATE_TIDY_CHECKS),$(clang-tidy-cpp))
 $(hide) $(RELATIVE_PWD) $(PRIVATE_CXX) \
@@ -1286,12 +1286,12 @@ endef
 ifneq (,$(filter 1 true,$(WITH_TIDY_ONLY)))
 define transform-c-to-o
 $(if $(PRIVATE_TIDY_CHECKS),
-  @echo "$($(PRIVATE_PREFIX)DISPLAY) tidy $(PRIVATE_ARM_MODE) C: $<"
+  @echo "$($(PRIVATE_PREFIX)DISPLAY) tidy $(PRIVATE_COMPILER_ID) $(PRIVATE_ARM_MODE) C: $<"
   $(clang-tidy-c))
 endef
 else
 define transform-c-to-o
-@echo "$($(PRIVATE_PREFIX)DISPLAY) $(PRIVATE_ARM_MODE) C: $(PRIVATE_MODULE) <= $<"
+@echo "$($(PRIVATE_PREFIX)DISPLAY) $(PRIVATE_COMPILER_ID) $(PRIVATE_ARM_MODE) C: $(PRIVATE_MODULE) <= $<"
 @mkdir -p $(dir $@)
 $(if $(PRIVATE_TIDY_CHECKS),$(clang-tidy-c))
 $(hide) $(RELATIVE_PWD) $(PRIVATE_CC) \
@@ -2941,7 +2941,7 @@ $(if $(2), \
   echo "$$printname maxsize=$$maxsize blocksize=$$img_blocksize total=$$total reserve=$$reserve"; \
   if [ "$$total" -gt "$$maxsize" ]; then \
     echo "error: $$printname too large ($$total > [$(2) - $$reserve])"; \
-    false; \
+    true; \
   elif [ "$$total" -gt $$((maxsize - 32768)) ]; then \
     echo "WARNING: $$printname approaching size limit ($$total now; limit $$maxsize)"; \
   fi \
