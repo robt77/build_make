@@ -555,26 +555,43 @@ function print_lunch_menu()
     echo ""
     tput setaf 1;
     tput bold;
-    echo "                                REAPER                                "
-    tput sgr0;
+    echo " ██▀███ ▓█████▄▄▄      ██▓███ ▓█████ ██▀███  ██▀███  ▒█████  ███▄ ▄███▓ ██████ ";
+    echo "▓██ ▒ ██▓█   ▒████▄   ▓██░  ██▓█   ▀▓██ ▒ ██▓██ ▒ ██▒██▒  ██▓██▒▀█▀ ██▒██    ▒ ";
+    echo "▓██ ░▄█ ▒███ ▒██  ▀█▄ ▓██░ ██▓▒███  ▓██ ░▄█ ▓██ ░▄█ ▒██░  ██▓██    ▓██░ ▓██▄   ";
+    echo "▒██▀▀█▄ ▒▓█  ░██▄▄▄▄██▒██▄█▓▒ ▒▓█  ▄▒██▀▀█▄ ▒██▀▀█▄ ▒██   ██▒██    ▒██  ▒   ██▒";
+    echo "░██▓ ▒██░▒████▓█   ▓██▒██▒ ░  ░▒████░██▓ ▒██░██▓ ▒██░ ████▓▒▒██▒   ░██▒██████▒▒";
+    echo "░ ▒▓ ░▒▓░░ ▒░ ▒▒   ▓▒█▒▓▒░ ░  ░░ ▒░ ░ ▒▓ ░▒▓░ ▒▓ ░▒▓░ ▒░▒░▒░░ ▒░   ░  ▒ ▒▓▒ ▒ ░";
+    echo "  ░▒ ░ ▒░░ ░  ░▒   ▒▒ ░▒ ░     ░ ░  ░ ░▒ ░ ▒░ ░▒ ░ ▒░ ░ ▒ ▒░░  ░      ░ ░▒  ░ ░";
+    echo "  ░░   ░   ░   ░   ▒  ░░         ░    ░░   ░  ░░   ░░ ░ ░ ▒ ░      ░  ░  ░  ░  ";
+    echo "   ░       ░  ░    ░  ░          ░  ░  ░       ░        ░ ░        ░        ░  ";
+    echo "                                                                               ";
     echo ""
-    echo "                             Breakfast Menu                           "
+    echo "                             Welcome to Reaper                    "
     echo ""
     tput bold;
-    echo "     Below are all the devices currently available to be compiled     "
+    echo "                             Pick Your Poison!                    "
     tput sgr0;
     echo ""
     else
     echo ""
     tput setaf 1;
     tput bold;
-    echo "                                REAPER                                "
-    tput sgr0;
+    echo " ██▀███ ▓█████▄▄▄      ██▓███ ▓█████ ██▀███  ██▀███  ▒█████  ███▄ ▄███▓ ██████ ";
+    echo "▓██ ▒ ██▓█   ▒████▄   ▓██░  ██▓█   ▀▓██ ▒ ██▓██ ▒ ██▒██▒  ██▓██▒▀█▀ ██▒██    ▒ ";
+    echo "▓██ ░▄█ ▒███ ▒██  ▀█▄ ▓██░ ██▓▒███  ▓██ ░▄█ ▓██ ░▄█ ▒██░  ██▓██    ▓██░ ▓██▄   ";
+    echo "▒██▀▀█▄ ▒▓█  ░██▄▄▄▄██▒██▄█▓▒ ▒▓█  ▄▒██▀▀█▄ ▒██▀▀█▄ ▒██   ██▒██    ▒██  ▒   ██▒";
+    echo "░██▓ ▒██░▒████▓█   ▓██▒██▒ ░  ░▒████░██▓ ▒██░██▓ ▒██░ ████▓▒▒██▒   ░██▒██████▒▒";
+    echo "░ ▒▓ ░▒▓░░ ▒░ ▒▒   ▓▒█▒▓▒░ ░  ░░ ▒░ ░ ▒▓ ░▒▓░ ▒▓ ░▒▓░ ▒░▒░▒░░ ▒░   ░  ▒ ▒▓▒ ▒ ░";
+    echo "  ░▒ ░ ▒░░ ░  ░▒   ▒▒ ░▒ ░     ░ ░  ░ ░▒ ░ ▒░ ░▒ ░ ▒░ ░ ▒ ▒░░  ░      ░ ░▒  ░ ░";
+    echo "  ░░   ░   ░   ░   ▒  ░░         ░    ░░   ░  ░░   ░░ ░ ░ ▒ ░      ░  ░  ░  ░  ";
+    echo "   ░       ░  ░    ░  ░          ░  ░  ░       ░        ░ ░        ░        ░  ";
+    echo "                                                                               ";
+
     echo ""
-    echo "                              Lunch Menu                              "
+    echo "                             Welcome to Reaper                    "
     echo ""
     tput bold;
-    echo "     Below are all the devices currently available to be compiled     "
+    echo "                             Pick Your Poison!                    "
     tput sgr0;
     echo ""
     fi
