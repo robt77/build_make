@@ -2495,6 +2495,38 @@ bacon: otapackage
 death: otapackage
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(CUSTOM_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(CUSTOM_TARGET_PACKAGE) > $(CUSTOM_TARGET_PACKAGE).md5sum
+	@echo -e ${CL_RED}" "${CL_RED}
+	@echo -e ${CL_RED}"      ___                       ___  ____  __  ___   "${CL_RED}
+	@echo -e ${CL_RED}"     / _ \___ ___ ____ ___ ____/ _ \/ __ \/  |/  /   "${CL_RED}
+	@echo -e ${CL_RED}"    / , _/ -_/ _  / _ / -_/ __/ , _/ /_/ / /|_/ /    "${CL_RED}
+	@echo -e ${CL_RED}"   /_/|_|\__/\_._/ ._/\__/_/ /_/|_|\____/_/  /_/     "${CL_RED}
+	@echo -e ${CL_RED}"                /_/                                  "${CL_RED}
+	@echo -e ${CL_GRY}" dxxxkkxxxddddddddxxxxxxl::dkOkkkkkkk00OkkkOOOkkdlc: "${CL_GRY}
+	@echo -e ${CL_GRY}" ddxxkkOOOOkkkxkkkkkkkxl . .oxOOOOOkkxk0OOOOOOkxdllc "${CL_GRY}
+	@echo -e ${CL_GRY}" ddxxkO0KKK0000OOkkOy: :ldo:.ckOOOko...:kO00OOkxdoll "${CL_GRY}
+	@echo -e ${CL_GRY}" ddxxk0KXXXXKKKOo.: . .x0KKOkl:x0o:..   .x0OOOkxdooo "${CL_GRY}
+	@echo -e ${CL_GRY}" xxxxkO0XXXNNKx.. .:coxO0XXKKKxcc. .     lOOkkkxxddo "${CL_GRY}
+	@echo -e ${CL_GRY}" xxxxkkO0KKXO: .cx0KXXXXXXKKKK0l.        .xOkOkxxddo "${CL_GRY}
+	@echo -e ${CL_GRY}" xxxxkkkkOxc .o0XNXXXXXXXXK0Od:..         :O0Okxxxdd "${CL_GRY}
+	@echo -e ${CL_GRY}" xxxkkxkko..oOKKXXXXXXXXKKk:..    .       .x0Okkkxxd "${CL_GRY}
+	@echo -e ${CL_GRY}" xxxkOOkc:oO0K0KKXXXXXXKKk.        ....    .xOkxxxdd "${CL_GRY}
+	@echo -e ${CL_GRY}" xxxkkxclOKKKKKXXXXXXXXKd.         .::.     .dkkxxdd "${CL_GRY}
+	@echo -e ${CL_GRY}" ddxxdcdO00KKKXXXXXXXXx:.          ....      :kkxddd "${CL_GRY}
+	@echo -e ${CL_GRY}" oooolxO00KKKXXXNNNNNx.               ..     :kkxddd "${CL_GRY}
+	@echo -e ${CL_GRY}" lllloxkOO0KKXXNNNNWWk.                 ... .:xkxddd "${CL_GRY}
+	@echo -e ${CL_GRY}" ::ccloodxkOO0KXNNNNNXx..ll.           .:c:...oOxddd "${CL_GRY}
+	@echo -e ${CL_GRY}" .:::CcllddxkO0KXKKKXKKKKXKl...         .... .lkxxdd "${CL_GRY}
+	@echo -e ${CL_GRY}" ...:::cloddxxkOOOOOOKKKKK0dc:.            ...cdolll "${CL_GRY}
+	@echo -e ${CL_GRY}" ......::cloddxxkxkkkkO0OOOkdc.              .:cc::: "${CL_GRY}
+	@echo -e ${CL_GRY}" .........:::clodxkOOkkxkxxxd:.              ...:::: "${CL_GRY}
+	@echo -e ${CL_GRY}" .............::loxkkxolc:::c.              ......:: "${CL_GRY}
+	@echo -e ${CL_GRY}" ..............::::::::.......             ........: "${CL_GRY}
+	@echo -e ${CL_GRY}" ............................             .......... "${CL_GRY}
+	@echo -e ${CL_GRY}"    .   .....................             .......... "${CL_GRY}
+	@echo -e ${CL_GRY}"    .   ....................              .......... "${CL_GRY}
+	@echo -e ${CL_GRY}" ....    .... ..............               ......... "${CL_GRY}
+	@echo -e ${CL_GRY}" ......   ... .......                      ......... "${CL_GRY}
+	@echo -e ${CL_RST}" "${CL_RST}
 	@echo "Package Complete: $(CUSTOM_TARGET_PACKAGE)"
 
 endif    # build_ota_package
