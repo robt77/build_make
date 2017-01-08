@@ -475,12 +475,17 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   # Dump fingerprints
   #script.Print("Target: %s" % target_fp)
-script.Print("      ___                       ___  ____  __  ___   ")
-script.Print("     / _ \___ ___ ____ ___ ____/ _ \/ __ \/  |/  /   ")
-script.Print("    / , _/ -_/ _  / _ / -_/ __/ , _/ /_/ / /|_/ /    ")
-script.Print("   /_/|_|\__/\_._/ ._/\__/_/ /_/|_|\____/_/  /_/     ")
-script.Print("                /_/                                  ")
-
+  build = GetBuildProp("ro.build.id", OPTIONS.info_dict)
+  date = GetBuildProp("ro.build.date", OPTIONS.info_dict)
+  model = GetBuildProp("ro.product.model", OPTIONS.info_dict)
+  script.Print("      ___                       ___  ____  __  ___   ")
+  script.Print("     / _ \___ ___ ____ ___ ____/ _ \/ __ \/  |/  /   ")
+  script.Print("    / , _/ -_/ _  / _ / -_/ __/ , _/ /_/ / /|_/ /    ")
+  script.Print("   /_/|_|\__/\_._/ ._/\__/_/ /_/|_|\____/_/  /_/     ")
+  script.Print("                /_/                                  ")
+  script.Print("    Device       : %s"%(model)    )
+  script.Print("    Build number : %s"%(build)    )
+  script.Print("    Build date   : %s"%(date)     )
 
   script.AppendExtra("ifelse(is_mounted(\"/system\"), unmount(\"/system\"));")
   device_specific.FullOTA_InstallBegin()
