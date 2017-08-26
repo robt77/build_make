@@ -552,11 +552,31 @@ function print_lunch_menu()
     fi
     echo
     if [ "z${CUSTOM_DEVICES_ONLY}" != "z" ]; then
-       echo "Breakfast menu... pick a combo:"
-       echo " "
+    echo ""
+    tput setaf 1;
+    tput bold;
+    echo "                                REAPER                                "
+    tput sgr0;
+    echo ""
+    echo "                             Breakfast Menu                           "
+    echo ""
+    tput bold;
+    echo "     Below are all the devices currently available to be compiled     "
+    tput sgr0;
+    echo ""
     else
-       echo "Lunch menu... pick a combo:"
-       echo " "
+    echo ""
+    tput setaf 1;
+    tput bold;
+    echo "                                REAPER                                "
+    tput sgr0;
+    echo ""
+    echo "                              Lunch Menu                              "
+    echo ""
+    tput bold;
+    echo "     Below are all the devices currently available to be compiled     "
+    tput sgr0;
+    echo ""
     fi
 
     local i=1
@@ -569,7 +589,7 @@ function print_lunch_menu()
 
     if [ "z${CUSTOM_DEVICES_ONLY}" != "z" ]; then
        echo " "
-       echo "... time to mka bacon!!"
+       echo "... time to mka delicious bacon!!"
     fi
 
     echo
@@ -592,7 +612,7 @@ function breakfast()
     target=$1
     CUSTOM_DEVICES_ONLY="true"
     unset LUNCH_MENU_CHOICES
-    for f in `/bin/ls vendor/pure/vendorsetup.sh 2> /dev/null`
+    for f in `/bin/ls vendor/reaper/vendorsetup.sh 2> /dev/null`
         do
             echo "including $f"
             . $f
