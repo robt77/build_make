@@ -476,10 +476,6 @@ FULL_BUILD := true
 # Before we go and include all of the module makefiles, mark the PRODUCT_*
 # and ADDITIONAL*PROPERTIES values readonly so that they won't be modified.
 $(call readonly-product-vars)
-ADDITIONAL_DEFAULT_PROPERTIES := $(strip $(ADDITIONAL_DEFAULT_PROPERTIES))
-.KATI_READONLY := ADDITIONAL_DEFAULT_PROPERTIES
-ADDITIONAL_BUILD_PROPERTIES := $(strip $(ADDITIONAL_BUILD_PROPERTIES))
-.KATI_READONLY := ADDITIONAL_BUILD_PROPERTIES
 
 ifneq ($(PRODUCT_ENFORCE_RRO_TARGETS),)
 ENFORCE_RRO_SOURCES :=
